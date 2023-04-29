@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:aqua">CodingEngine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/bootstrap.htm">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.htm">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fields
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">React-Native Development</a></li>
+                            <li><a class="dropdown-item" href="#">Java-App Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact.htm">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="row g-3">
+            <h1>Contact Us</h1>
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter first name" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Enter last name" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Username</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Your username?" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">State</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option>Web Development</option>
+                <option value="">App Development</option>
+                <option>React-Native Development</option>
+                <option value="">Game Development</option>
+        </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="Query in zip file" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© Malik-Saddique Company, CodingEngine Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+</body>
+</html>
